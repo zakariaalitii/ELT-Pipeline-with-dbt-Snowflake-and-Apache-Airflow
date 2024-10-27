@@ -14,18 +14,20 @@ Project Objectives
 Technologies Used
 ===========================
 
-a. Snowflake
-    What is it? A cloud-based data warehouse platform that offers high performance, scalability, and flexibility.
-    Role in ELT: Acts as the central repository where raw data is loaded and transformations are executed.
-b. dbt (Data Build Tool)
-    What is it? An open-source tool that enables data analysts and engineers to transform data in their warehouse by simply writing SQL select statements.
-    Role in ELT: Manages data transformations, dependencies, testing, and documentation within the warehouse.
-c. Apache Airflow
-    What is it? An open-source platform to programmatically author, schedule, and monitor workflows.
-    Role in ELT: Orchestrates the entire data pipeline, scheduling extraction, loading, and transformation tasks.
+- Snowflake: A cloud-based data warehouse platform that offers high performance, scalability, and flexibility..
+
+    - Role in ELT: Acts as the central repository where raw data is loaded and transformations are executed.
+- dbt (Data Build Tool): An open-source tool that enables data analysts and engineers to transform data in their warehouse by simply writing SQL select statements.
+
+    - Role in ELT: Manages data transformations, dependencies, testing, and documentation within the warehouse.
+- Apache Airflow: An open-source platform to programmatically author, schedule, and monitor workflows.
+
+    - Role in ELT: Orchestrates the entire data pipeline, scheduling extraction, loading, and transformation tasks.
+
 
 How the Project Works
 =================================
+
 This project builds an ELT pipeline using Snowflake, dbt, and Apache Airflow:
 
 - Data Source: Leverages Snowflake's TPCH sample data (orders and lineitem tables).
